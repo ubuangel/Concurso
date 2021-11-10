@@ -9,14 +9,24 @@ using namespace std;
 int main(){
 
 	
-	string micadena="cadena para cifrar";
+	string micadena="haveaniceday";
 	 micadena.erase(std::remove(micadena.begin(), micadena.end(), ' '), micadena.end());
 	
 	int tam=micadena.length();
 	
 	int filas=sqrt(tam);
+	int columnas=filas;
 	//cout<<filas;
-	int columnas=filas+1;
+	
+	
+	if (filas*columnas >= tam)
+	{
+		columnas=filas;
+	}else{
+		columnas=filas+1;
+		
+	}
+	
 	char micad[filas][columnas];
 	
 	char p[micadena.length()];
