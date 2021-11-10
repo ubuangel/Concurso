@@ -31,15 +31,7 @@ int main(){
 	
 	char p[micadena.length()];
 	
-	//convertir a array
-	for (unsigned int i = 0; i < sizeof(p); i += 1)
-	{
-		 p[i] = micadena[i];
 
-        	cout << p[i];
-	}
-	
-	cout<<endl;
 	
 	// asignar aelemtos a matriz
 	int a=0;
@@ -47,7 +39,7 @@ int main(){
 	{
 		for ( int j = 0; j < columnas; j += 1)
 		{
-			micad[i][j]=p[a];
+			micad[i][j]=micadena[a];
 			a++;
 		}
 	}
