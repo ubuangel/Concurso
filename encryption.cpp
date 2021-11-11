@@ -3,13 +3,13 @@
 #include <string>
 #include<math.h>
 #include <algorithm>
-
+//cuido con string y pones void function para el juez
 using namespace std;
 
 int main(){
 
 	
-	string micadena="haveaniceday";
+	string micadena="ifmanwasmeanttostayonthegroundgodwouldhavegivenusroots";
 	 micadena.erase(std::remove(micadena.begin(), micadena.end(), ' '), micadena.end());
 	
 	int tam=micadena.length();
